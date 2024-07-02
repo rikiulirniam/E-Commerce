@@ -17,6 +17,9 @@ switch ($request) {
     case '/crud/contact':
         require __DIR__ . '/frontend/contact.php';
         break;
+    case '/crud/login':
+        require __DIR__ . '/frontend/Auth/login.php';
+        break;
     // Tambahkan rute lainnya sesuai kebutuhan
     default:
         http_response_code(404);
