@@ -1,5 +1,6 @@
 <?php
-
+    include 'assets/init.php';
+    
 ?>
 
 <!DOCTYPE html>
@@ -8,12 +9,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Commerce</title>
-    <link rel="stylesheet" href="./assets/fa.css">
-    <link rel="stylesheet" href="./assets/bootstrap.css">
+    <link rel="stylesheet" href="<?= __ASSETS__?>fa.css">
+    <link rel="stylesheet" href="<?= __ASSETS__?>bootstrap.css">
 </head>
 <body>
-    <h1 class="text-danger">
+    <h1 class="text-primary">
         Hello
+        World
     </h1>
     <form action=""></form>
 </body>
