@@ -1,42 +1,52 @@
 <?php
-    include '../config/init.php';
+include '../config/init.php'
+
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce</title>
-    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/bootstrap.css" />
+  <title>E-Commerce</title>
 </head>
+
 <body>
-    <div class="vh-100 d-flex flex-column align-items-center justify-content-center">
-        <div class="login-page border border-3 rounded p-5" style="width: 400px">
-            <h3 class="text-center ">Login</h3>
+  <div class="container vh-100 d-flex flex-column justify-content-center align-items-center">
 
-            <!-- Input Username -->
-            <div data-mdb-input-init class="form-outline mb-4">
-                <label for="username" class="form-label">Username</label>
-                <input type="text" id="username" class="form-control">
-            </div>
-
-            <!-- Input Password -->
-            <div data-mdb-input-init class="form-outline mb-2">
-                <label for="password" class="form-label">Password</label>
-                <input type="password" id="password" class="form-control">
-            </div>
-
-            <!-- Login-Button -->
-            <div class="submit-button d-flex flex-column align-items-end pt-2">
-                <button type="button" class="btn btn-primary">Login</button>
-            </div>
-
-            <!-- Link Regist -->
-            <div class="link pt-3">
-                <p>Don't have account ? <a href="./pages/index.php">Sign in</a></p>
-            </div>
+    <div class="login-page border border-2 rounded py-4 px-5" style="width: 412px;">
+      <h3 class="text-center p-3">Login Form</h3>
+      <form class="d-flex flex-column   ">
+        <!-- Email input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+          <input type="text" id="username" class="form-control" placeholder="" name="username" />
+          <label class="form-label" for="username">Username</label>
         </div>
+
+        <!-- Password input -->
+        <div data-mdb-input-init class="form-outline mb-2">
+          <input type="password" id="password" class="form-control" />
+          <label class="form-label" for="password">Password</label>
+        </div>
+
+        
+        <!-- Submit button -->
+        <div class="submit-button d-flex flex-column align-items-end">
+          <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary align-items-end btn-block mb-4 px-4">Sign in</button>
+        </div>
+        
+        <!-- Register buttons -->
+        <div class="text-left mb-2">
+          <p>Not a member? <a href="./auth/register.php">Register</a></p>
+        </div>
+      </form>
+
     </div>
+
+
+  </div>
 </body>
+
 </html>
