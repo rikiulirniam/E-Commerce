@@ -18,6 +18,7 @@
         </div>
         <div class="vh-100">
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, temporibus.</p>
+            <img src="../assets/icons/caret-left.svg" alt="" style="width: 2%">
         </div>
     </div>
 </body>

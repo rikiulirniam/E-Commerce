@@ -9,7 +9,7 @@ include '../config/init.php'
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./assets/bootstrap.css" />
+  <link rel="stylesheet" href="../assets/bootstrap.css" />
   <title>E-Commerce</title>
 </head>
 
@@ -17,7 +17,7 @@ include '../config/init.php'
   <div class="container vh-100 d-flex flex-column justify-content-center align-items-center">
 
     <div class="login-page border border-2 rounded py-4 px-5" style="width: 412px;">
-      <h3 class="text-center p-3">Login Form</h3>
+      <h3 class="text-center p-3">Register Form</h3>
       <form class="d-flex flex-column   ">
         <!-- Email input -->
         <div data-mdb-input-init class="form-outline mb-4">
@@ -39,10 +39,9 @@ include '../config/init.php'
         
         <!-- Register buttons -->
         <div class="text-left mb-2">
-          <p>Not a member? <a href="./auth/register.php">Register</a></p>
+          <p>Have a member? <a href="../index.php">Login</a></p>
         </div>
       </form>
-
     </div>
 
 
